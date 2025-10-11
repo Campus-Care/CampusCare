@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusCare | Login</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="icon" type = "image/png" href="logo.png">
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="logo.png" alt="CampusCare Logo" class="logo">
+      <div class="title-area">
+      <a href="index.html" style="text-decoration: none; color: inherit;">
+        <h1 class="title">CampusCare</h1>
+        <p class="tagline">Your Voice For A Better Campus</p>
+      </a>
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <a href="about.html">About</a>
+      <a href="help.html">Help</a>
+      <a href="faqs.html">FAQs</a>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-container">
+    <!-- LEFT SIDE -->
+    <section class="left-side">
+      <div class="logos">
+        <img src="iitr.png" alt="IIT Roorkee Logo" class="iitr-logo">
+        <span class="cross">×</span>
+        <img src="campuscare.png" alt="CampusCare Logo" class="campuscare-logo">
+      </div>
+    </section>
+
+    <!-- RIGHT SIDE (LOGIN) -->
+    <section class="right-side">
+      <div class="login-card">
+        <h2>Login to CampusCare</h2>
+        <form>
+          <label>Email ID</label>
+          <input type="email" placeholder="Enter your institute email" required>
+          
+          <label>Password</label>
+          <input type="password" placeholder="Enter your password" required>
+          
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

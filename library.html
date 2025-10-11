@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusCare | Library</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" type = "image/png" href="logo.png">
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="logo.png" alt="CampusCare Logo" class="logo">
+      <div class="title-area">
+      <a href="index.html" style="text-decoration: none; color: inherit;">
+        <h1 class="title">CampusCare</h1>
+        <p class="tagline">Your Voice For A Better Campus</p>
+      </a>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="about.html">About</a>
+      <a href="help.html">Help</a>
+      <a href="faqs.html">FAQs</a>
+    </nav>
+  </nav>
+
+  <!-- ===== MAIN SECTION ===== -->
+  <main class="main-container">
+    <!-- LEFT SIDE -->
+    <div class="left-side">
+      <h1 class="page-title">Library</h1>
+      <h2>Specify Your Issue</h2>
+      <select id="issueSelect">
+        <option value="">-- Select a Problem --</option>
+        <option value="unavailability">Unavailability Of Books</option>
+        <option value="timing">Return/Issue Timing</option>
+        <option value="seating">Lack Of Seating Space</option>
+        <option value="wifi">Wi-Fi</option>
+      </select>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right-side">
+      <div class="logos" id="logoSection">
+        <img src="iitr.png" alt="IITR Logo" class="iitr-logo">
+        <span class="cross">×</span>
+        <img src="campuscare.png" alt="CampusCare Logo" class="campuscare-logo">
+      </div>
+
+      <div class="form-container hidden" id="formSection">
+        <h3>Provide Your Details</h3>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name">
+
+          <label for="enrollment">Enrollment Number</label>
+          <input type="text" id="enrollment" placeholder="Enter enrollment number">
+
+          <label for="room">Room Number</label>
+          <input type="text" id="room" placeholder="Enter room number">
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+<script src="library.js"></script>
+
+</body>
+</html>
